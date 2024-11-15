@@ -5,16 +5,17 @@ import Image from "next/image";
 type Props = {
   title: string;
   src: string;
+  className?: string;
   slug?: string;
 };
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const CoverImage = ({ title, src, slug, className }: Props) => {
   const image = (
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
-      className={cn("shadow-sm w-full", {
-        "hover:shadow-lg transition-shadow duration-200": slug,
+      className={cn("w-full", className, {
+        "transition-shadow duration-200": slug,
       })}
       width={1300}
       height={630}
