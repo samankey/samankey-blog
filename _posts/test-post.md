@@ -3,8 +3,6 @@ title: "This is a test post desu"
 excerpt: "이거는 적어서 무얼하나"
 coverImage: "/assets/blog/test-post/test.jpeg"
 date: "2024-11-15T05:35:07.322Z"
-author:
-  name: Ming
 ogImage:
   url: "/assets/blog/test-post/test.jpeg"
 ---
