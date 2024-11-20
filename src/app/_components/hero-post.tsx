@@ -12,13 +12,13 @@ type Props = {
 
 export function HeroPost({ title, coverImage, date, excerpt, slug }: Props) {
   return (
-    <section>
+    <section className="rounded-2xl">
       <div className="mb-8 md:mb-16 relative w-full aspect-video">
         <CoverImage
           title={title}
           src={coverImage}
           slug={slug}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover rounded-2xl"
         />
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">

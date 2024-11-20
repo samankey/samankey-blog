@@ -1,4 +1,5 @@
 ---
+published: false
 title: "This is a test post desu"
 excerpt: "이거는 적어서 무얼하나"
 coverImage: "/assets/blog/test-post/test.jpeg"

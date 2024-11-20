@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next dev --turbopack --hostname 'localhost' --port 3009",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install",
+    "update-post-dates": "ts-node src/lib/updatePostDates.ts"
   },
   "dependencies": {
     "classnames": "^2.5.1",
@@ -20,8 +22,15 @@
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "autoprefixer": "^10.4.19",
+    "husky": "^9.1.7",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": ".husky/pre-commit"
+    }
   }
 }
