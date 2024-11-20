@@ -7,7 +7,7 @@ excerpt: >-
   vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla
   facilities morbi tempus.
 coverImage: /assets/blog/preview/cover.jpg
-date: '2024-11-20T12:12:16.355Z'
+date: '2024-11-20T13:00:56.939Z'
 ogImage:
   url: /assets/blog/preview/cover.jpg
 ---

@@ -1,13 +1,18 @@
 import Footer from "@/app/_components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import cn from "classnames";
-import { ThemeSwitcher } from "./_components/theme-switcher";
-
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const pretendard = localFont({
+  src: "../../public/static/font/PretendardVariable.woff2",
+  display: "swap",
+  weight: "45 920",
+  variable: "--font-pretendard",
+});
 
 export const metadata: Metadata = {
   title: `Blog ${CMS_NAME}`,
@@ -23,7 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="kr"
+      className={`${pretendard.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         <link
           rel="apple-touch-icon"
@@ -62,11 +71,13 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body
-        className={cn(inter.className, "dark:bg-zinc-900 dark:text-zinc-100")}
+        className={cn(
+          pretendard.className,
+          "dark:bg-zinc-900 dark:text-zinc-100"
+        )}
       >
-        <ThemeSwitcher />
         <div className="min-h-screen">{children}</div>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
