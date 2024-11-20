@@ -3,7 +3,7 @@ published: true
 title: throttle과 async를 함께 쓸 때 주의할 점
 excerpt: 함께쓰면 장담할 수 없다!
 coverImage: /assets/blog/throttle-async/throttle-async.jpg
-date: '2024-11-20T13:00:56.940Z'
+date: '2024-11-20T14:32:30.621Z'
 ogImage:
   url: /assets/blog/throttle-async/throttle-async.jpg
 ---

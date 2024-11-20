@@ -19,7 +19,6 @@ const updatePostDate = (filePath: string): void => {
     const fileModTime = stats.mtime.toISOString();
 
     // 프론트매터의 date와 파일의 실제 수정 시간을 비교
-    console.log(new Date(data.date).toISOString(), stats.mtime.toISOString());
     if (!data.date || !isSameDate(new Date(data.date), stats.mtime)) {
       const copy = JSON.parse(JSON.stringify(data));
       copy.date = fileModTime;
@@ -28,7 +27,7 @@ const updatePostDate = (filePath: string): void => {
       // 파일 내용이 실제로 변경되었는지 확인
       if (updatedFileContents !== fileContents) {
         fs.writeFileSync(filePath, updatedFileContents);
-        // console.log(`Updated date in ${filePath} to ${fileModTime}`);
+        console.log(`Updated date in ${filePath} to ${fileModTime}`);
       } else {
         console.log(`No changes needed in ${filePath}`);
       }
