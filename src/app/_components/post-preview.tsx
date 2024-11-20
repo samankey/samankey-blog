@@ -21,11 +21,11 @@ export function PostPreview({ title, coverImage, date, excerpt, slug }: Props) {
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
           />
         </div>
-        <div className="text-lg mb-4 text-gray-500">
+        <div className="text-lg mb-4 text-zinc-500">
           <DateFormatter dateString={date} />
         </div>
         <h3 className="text-3xl mb-3 leading-snug">{title}</h3>
-        <p className="text-lg leading-relaxed mb-4 text-gray-600 dark:text-gray-400">
+        <p className="text-lg leading-relaxed mb-4 text-zinc-600 dark:text-zinc-400">
           {excerpt}
         </p>
       </Link>

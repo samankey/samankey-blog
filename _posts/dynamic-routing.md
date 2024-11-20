@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: Dynamic Routing and Static Generation
 excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -7,7 +7,7 @@ excerpt: >-
   vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla
   facilities morbi tempus.
 coverImage: /assets/blog/dynamic-routing/cover.jpg
-date: '2024-11-20T05:49:56.565Z'
+date: '2024-11-20T12:12:17.252Z'
 ogImage:
   url: /assets/blog/dynamic-routing/cover.jpg
 ---

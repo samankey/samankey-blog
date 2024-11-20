@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: Preview Mode for Static Generation
 excerpt: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -7,7 +7,7 @@ excerpt: >-
   vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla
   facilities morbi tempus.
 coverImage: /assets/blog/preview/cover.jpg
-date: '2024-11-20T05:49:56.567Z'
+date: '2024-11-20T12:12:16.355Z'
 ogImage:
   url: /assets/blog/preview/cover.jpg
 ---
