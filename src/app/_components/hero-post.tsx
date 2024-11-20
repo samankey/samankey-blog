@@ -17,7 +17,6 @@ export function HeroPost({ title, coverImage, date, excerpt, slug }: Props) {
         <CoverImage
           title={title}
           src={coverImage}
-          slug={slug}
           className="absolute inset-0 w-full h-full object-cover rounded-2xl"
         />
       </div>
