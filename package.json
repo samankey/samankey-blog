@@ -1,11 +1,12 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack --hostname 'localhost' --port 3009",
     "build": "next build",
     "start": "next start",
     "prepare": "husky install",
-    "update-post-dates": "ts-node src/lib/updatePostDates.ts"
+    "update-post-dates": "tsx src/lib/updatePostDates.ts"
   },
   "dependencies": {
     "classnames": "^2.5.1",
@@ -26,6 +27,7 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.5.2"
   },
   "husky": {
