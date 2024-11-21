@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "ci": "pnpm run clean && pnpm install --frozen-lockfile",
     "dev": "next dev --turbopack --hostname 'localhost' --port 3009",
     "build": "next build",
     "start": "next start",

@@ -10,30 +10,48 @@ const isSameDate = (date1: Date, date2: Date): boolean => {
   );
 };
 
+const updateDateInFrontmatter = (
+  filePath: string,
+  content: string,
+  data: Record<string, any>,
+  dateField: string,
+  newDate: string
+): void => {
+  data[dateField] = newDate;
+  const updatedFileContents = matter.stringify(content, data);
+
+  if (updatedFileContents !== fs.readFileSync(filePath, "utf8")) {
+    fs.writeFileSync(filePath, updatedFileContents);
+    console.log(`Updated ${dateField} in ${filePath} to ${newDate}`);
+  } else {
+    console.log(`No changes needed for ${dateField} in ${filePath}`);
+  }
+};
+
 const updatePostDate = (filePath: string): void => {
   try {
     const fileContents = fs.readFileSync(filePath, "utf8");
     const { data, content } = matter(fileContents);
-
     const stats = fs.statSync(filePath);
-    const fileModTime = stats.mtime.toISOString();
 
-    // 프론트매터의 date와 파일의 실제 수정 시간을 비교
-    if (!data.date || !isSameDate(new Date(data.date), stats.mtime)) {
-      const copy = JSON.parse(JSON.stringify(data));
-      copy.date = fileModTime;
-      const updatedFileContents = matter.stringify(content, copy);
+    const dates = [
+      { field: "createDate", stat: stats.birthtime },
+      { field: "date", stat: stats.mtime },
+    ];
 
-      // 파일 내용이 실제로 변경되었는지 확인
-      if (updatedFileContents !== fileContents) {
-        fs.writeFileSync(filePath, updatedFileContents);
-        console.log(`Updated date in ${filePath} to ${fileModTime}`);
+    dates.forEach(({ field, stat }) => {
+      if (!data[field] || !isSameDate(new Date(data[field]), stat)) {
+        updateDateInFrontmatter(
+          filePath,
+          content,
+          data,
+          field,
+          stat.toISOString()
+        );
       } else {
-        console.log(`No changes needed in ${filePath}`);
+        console.log(`${field} already up to date in ${filePath}`);
       }
-    } else {
-      console.log(`Date already up to date in ${filePath}`);
-    }
+    });
   } catch (error) {
     console.log(`Error processing ${filePath}: ${error}`);
   }
