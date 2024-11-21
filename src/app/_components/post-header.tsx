@@ -5,7 +5,7 @@ import { PostTitle } from "@/app/_components/post-title";
 
 type Props = {
   title: string;
-  coverImage: string;
+  coverImage?: string;
   date: string;
 };
 
@@ -20,13 +20,15 @@ export function PostHeader({ title, coverImage, date }: Props) {
           <DateFormatter dateString={date} />
         </div>
       </div>
-      <div className="mb-8 md:mb-16 sm:mx-0 relative w-full aspect-video">
-        <CoverImage
-          title={title}
-          src={coverImage}
-          className="absolute inset-0 w-full h-full object-cover rounded-2xl"
-        />
-      </div>
+      {coverImage && (
+        <div className="mb-8 md:mb-16 sm:mx-0 relative w-full aspect-video">
+          <CoverImage
+            title={title}
+            src={coverImage}
+            className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+          />
+        </div>
+      )}
     </>
   );
 }
