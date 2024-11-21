@@ -1,5 +1,5 @@
 import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+import { CMS_NAME } from "@/lib/constants";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import cn from "classnames";
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: `Blog ${CMS_NAME}`,
   description: `Welcome, It's ${CMS_NAME}'s blog.`,
   openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+    images: ["./main-og.jpg"],
   },
 };
 

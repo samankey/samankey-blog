@@ -3,7 +3,7 @@ published: true
 title: throttle과 async를 함께 쓸 때 주의할 점
 excerpt: 함께쓰면 장담할 수 없다!
 coverAlt: throttle & async
-date: '2024-11-21T13:11:26.186Z'
+date: '2024-11-21T13:14:11.178Z'
 ogImage:
   url: /assets/blog/throttle-async/throttle-async.jpg
 ---
