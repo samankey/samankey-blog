@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: `Blog ${CMS_NAME}`,
   description: `Welcome, It's ${CMS_NAME}'s blog.`,
   openGraph: {
-    images: ["./main-og.jpg"],
+    images: ["./opengraph-image.jpg"],
   },
 };
 

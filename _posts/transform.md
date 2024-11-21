@@ -3,7 +3,7 @@ published: true
 title: CSS 전환함수 transform
 excerpt: 전환함수 적용할 때마다 헷갈리셨죠
 coverAlt: transform
-date: '2024-11-21T13:14:11.180Z'
+date: '2024-11-21T14:59:33.316Z'
 ogImage:
   url: /assets/blog/throttle-async/throttle-async.jpg
 ---
