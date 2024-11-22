@@ -1,25 +1,38 @@
 import Link from "next/link";
 import CoverImage from "./cover-image";
+import CoverAlt from "./cover-alt";
 import DateFormatter from "./date-formatter";
 
 type Props = {
   title: string;
-  coverImage: string;
+  coverImage?: string;
+  coverAlt?: string;
   date: string;
   excerpt: string;
   slug: string;
 };
 
-export function PostPreview({ title, coverImage, date, excerpt, slug }: Props) {
+export function PostPreview({
+  title,
+  coverImage,
+  coverAlt,
+  date,
+  excerpt,
+  slug,
+}: Props) {
   return (
     <div className="group">
       <Link href={`/posts/${slug}`}>
         <div className="mb-5 relative w-full aspect-video overflow-hidden rounded-2xl">
-          <CoverImage
-            title={title}
-            src={coverImage}
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
-          />
+          {coverImage ? (
+            <CoverImage
+              title={title}
+              src={coverImage}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+            />
+          ) : (
+            <CoverAlt coverAlt={coverAlt} />
+          )}
         </div>
         <div className="text-lg mb-4 text-zinc-500">
           <DateFormatter dateString={date} />

@@ -3,12 +3,12 @@ import Image from "next/image";
 
 type Props = {
   title: string;
-  src: string;
+  src?: string;
   className?: string;
 };
 
 const CoverImage = ({ title, src, className }: Props) => {
-  const image = (
+  const image = src && (
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
