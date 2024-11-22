@@ -8,7 +8,9 @@ export function PostBody({ content }: Props) {
   return (
     <div className="w-full">
       <div
-        className={(markdownStyles["markdown"], "prose max-w-none")}
+        className={
+          (markdownStyles["markdown"], "prose prose-invert max-w-none")
+        }
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </div>

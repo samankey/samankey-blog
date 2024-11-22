@@ -3,9 +3,10 @@ published: true
 title: CSS 전환함수 transform
 excerpt: 전환함수 적용할 때마다 헷갈리셨죠
 coverAlt: transform
-date: '2024-11-21T14:59:33.316Z'
+date: '2024-11-22T02:21:41.051Z'
 ogImage:
   url: /assets/blog/throttle-async/throttle-async.jpg
+createDate: '2024-11-22T02:21:41.051Z'
 ---
 
 # CSS 전환함수 transform
