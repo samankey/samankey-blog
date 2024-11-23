@@ -12,7 +12,6 @@ export default async function markdownToHtml(markdown: string) {
     .use(remarkRehype)
     .use(rehypePrettyCode, {
       theme: "github-dark",
-      // 다른 옵션들을 여기에 추가할 수 있습니다.
     })
     .use(rehypeStringify)
     .process(markdown);
