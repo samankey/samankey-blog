@@ -9,7 +9,7 @@ export function PostBody({ content }: Props) {
     <div className="w-full">
       <div
         className={
-          (markdownStyles["markdown"], "prose prose-invert max-w-none")
+          (markdownStyles["markdown"], "prose dark:prose-invert max-w-none")
         }
         dangerouslySetInnerHTML={{ __html: content }}
       />

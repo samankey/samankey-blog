@@ -5,8 +5,8 @@ export type Post = {
   coverImage?: string;
   coverAlt?: string;
   excerpt: string;
-  ogImage: {
-    url: string;
+  ogImage?: {
+    url?: string;
   };
   content: string;
   preview?: boolean;

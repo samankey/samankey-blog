@@ -3,10 +3,8 @@ published: true
 title: throttle과 async를 함께 쓸 때 주의할 점
 excerpt: 함께쓰면 장담할 수 없다!
 coverAlt: throttle & async
-date: '2024-11-22T02:21:41.051Z'
-ogImage:
-  url: /assets/blog/throttle-async/throttle-async.jpg
-createDate: '2024-11-22T02:21:41.051Z'
+date: '2024-11-23T08:32:27.443Z'
+createDate: '2024-11-22T06:33:29.282Z'
 ---
 
 ```jsx
