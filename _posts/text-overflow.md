@@ -3,7 +3,7 @@ published: true
 title: width 설정 없이 text-overflow 적용하기
 excerpt: flex만 있으면 width는 필요없다
 coverAlt: text-overflow
-date: '2024-11-23T15:45:34.122Z'
+date: '2024-11-24T07:41:14.139Z'
 createDate: '2024-11-23T12:55:30.569Z'
 ---
 
@@ -15,7 +15,7 @@ createDate: '2024-11-23T12:55:30.569Z'
 2. mounted 시 (전체너비 - 다른 요소 너비) 계산 후 해당 요소에 width 설정
 3. flex 사용
 
-   ```jsx title="안녕" showLineNumbers
+   ```jsx
    .item {
      @include flex-item(space-between);
      gap: 1.5rem;
