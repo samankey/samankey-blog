@@ -3,7 +3,7 @@ published: true
 title: width 설정 없이 text-overflow 적용하기
 excerpt: flex만 있으면 width는 필요없다
 coverAlt: text-overflow
-date: '2024-11-23T15:33:47.535Z'
+date: '2024-11-23T15:45:34.122Z'
 createDate: '2024-11-23T12:55:30.569Z'
 ---
 
