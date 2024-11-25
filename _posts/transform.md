@@ -3,8 +3,8 @@ published: true
 title: CSS 전환함수 transform
 excerpt: 전환함수 적용할 때마다 헷갈리셨죠
 coverAlt: transform
-date: '2024-11-24T07:28:07.282Z'
-createDate: '2024-11-22T06:33:29.283Z'
+date: '2024-11-25T11:17:50.329Z'
+createDate: '2024-11-25T11:17:26.550Z'
 ---
 
 # CSS 전환함수 transform
