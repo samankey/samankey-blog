@@ -1,4 +1,5 @@
 import Footer from "@/app/_components/footer";
+import Providers from "@/app/_components/provider";
 import { CMS_NAME } from "@/lib/constants";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
@@ -74,7 +75,9 @@ export default function RootLayout({
           "dark:bg-zinc-900 dark:text-zinc-100"
         )}
       >
-        <div className="min-h-screen">{children}</div>
+        <Providers>
+          <div className="min-h-screen">{children}</div>
+        </Providers>
         <Footer />
       </body>
     </html>
