@@ -3,8 +3,8 @@ published: true
 title: width 설정 없이 text-overflow 적용하기
 excerpt: flex만 있으면 width는 필요없다
 coverAlt: text-overflow
-date: '2024-11-26T14:49:14.395Z'
-createDate: '2024-11-25T11:17:26.558Z'
+date: '2024-11-27T04:46:34.613Z'
+createDate: '2024-11-27T04:46:34.613Z'
 ---
 
 ### flex-box에서 text-overflow: ellipsis 적용하기

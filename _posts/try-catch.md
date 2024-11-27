@@ -3,8 +3,8 @@ published: true
 title: 비동기와 try/catch를 함께 쓸 때 주의할 것들
 excerpt: try/catch 내에서 의도적인 지연을 시켜야할 때와 비동기를 사용하면서 조심해야 할 몇 가지
 coverAlt: try / catch
-date: '2024-11-26T14:49:14.398Z'
-createDate: '2024-11-24T07:38:25.098Z'
+date: '2024-11-27T04:46:34.613Z'
+createDate: '2024-11-27T04:46:34.613Z'
 ---
 
 ### try-catch 내에서 의도적인 지연을 시켜야할 때

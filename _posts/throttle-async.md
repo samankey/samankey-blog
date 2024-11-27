@@ -3,8 +3,8 @@ published: true
 title: throttle과 async를 함께 쓸 때 주의할 점
 excerpt: 함께쓰면 장담할 수 없다!
 coverAlt: throttle & async
-date: '2024-11-26T14:49:14.396Z'
-createDate: '2024-11-25T11:17:26.555Z'
+date: '2024-11-27T04:46:34.613Z'
+createDate: '2024-11-27T04:46:34.613Z'
 ---
 
 저희 앱에는 요일별로 일감 리스트를 볼 수 있는 페이지가 있습니다. 이슈가 있어 확인해보니 다음과 같은 문제가 있었습니다.

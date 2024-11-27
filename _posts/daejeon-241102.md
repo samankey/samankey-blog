@@ -3,10 +3,10 @@ published: false
 title: 사진 테스트
 excerpt: 'daejeon, 2024'
 coverImage: /assets/blog/daejeon-241102/RX005479.JPG
-date: '2024-11-26T14:49:14.392Z'
+date: '2024-11-27T04:46:34.612Z'
 ogImage:
   url: /assets/blog/daejeon-241102/RX005479.JPG
-createDate: '2024-11-25T11:17:26.563Z'
+createDate: '2024-11-27T04:46:34.612Z'
 ---
 
 # 사진을 테스트합니다 수정2
